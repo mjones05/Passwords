@@ -13,9 +13,16 @@ while randomly-generated computer passwords are difficult for users to remember.
 the report. The code in this project implements a (very simple) system to help bridge this gap.
 
 
+Program Requirements -
+  - To run the program in this system, you will need to be able to run Python3, with the librarys hashlib, numpy, random, and sys.
+  - All of the .txt files must be in the same folder as the .py file, 'passwords.py'
+  - That's it. You can run the program from a Python IDE or from the command line.
+
+
 The system -
     In this program, passwords are made up of words, not just letters. Specifically, each password is 5 randomly
-chosen words from a list, in a random order. The process for encrypting a password involves a few steps:
+chosen words from a list, in a random order. Passwords are always computer-generated, except for the test account, which
+I set up manually. The process for encrypting a password involves a few steps:
  - First, split the string password by space characters, and convert all upper case letters to lower case.
  - Test each word (no spaces, now) for existence in our word list. If a word does not exist, password is not valid.
      This step also tests for SQL keywords in passwords, to help detect SQL injection.
